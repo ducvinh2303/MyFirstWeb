@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Kai Jun Wong">
+    <meta name="author" content="Duc Vinh Vu">
+    <meta name="author" content="Shawn Hatten">
+    <title>Art Design Blog Member Register</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <img id="banner-image" img src="images/banner-bg.jpg" alt="" />
+                <h1>Blog Member Register</h1>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li>Register</li>
+                    <li><a href=create.html>Create</a></li>
+                    <li><a href=about.html>About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- Register -->
+    <div class="wrapper">
+        <form id="registrationForm" novalidate action="index.html">
+            <h1> Registration</h1>
+            <div class="input-box">
+                <div class="f_name">
+                    <label for="f_name">Please enter your first name:</label>
+                    <input type="text" name="f_name" required>
+                </div>
+
+                <div class="u_name">
+                    <label for="u_name">Please enter your username:</label>
+                    <input type="text" name="u_name" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Please enter your email:</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="password">
+                    <label for="password">Please enter your password:</label>
+                    <input type="password" name="password" required>
+                </div>
+
+                <div class="c_password">
+                    <label for="c_password">Please confirm password again:</label>
+                    <input type="password" name="c_password" required>
+                </div>
+            </div>
+
+            <label><input type="checkbox" name="checkbox">I hereby declare that the above information provided is true and
+                correct</label>
+            <div id="error">
+                <p></p>
+            </div>
+            <script src="js/registration_validation.js"></script>
+            <div class="form-button">
+                <button type="submit" class="btn">Register</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- end of Register -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <p>Art Design Blog Page</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+</body>
+
+</html>

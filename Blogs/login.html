@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Kai Jun Wong">
+    <meta name="author" content="Duc Vinh Vu">
+    <meta name="author" content="Shawn Hatten">
+    <title>Art Design Blog Member Login</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <img id="banner-image" img src="images/banner-bg.jpg" alt="" />
+                <h1>Blog Member login</h1>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li>Login</li>
+                    <li><a href=register.html>Register</a></li>
+                    <li><a href=create.html>Create</a></li>
+                    <li><a href=about.html>About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- login -->
+    <div class="wrapper">
+        <form id="loginForm" novalidate action="index.html">
+            <h1>Login</h1>
+            <div class="input-box">
+                <div class="u_name">
+                    <label for="u_name">Please enter your username:</label>
+                    <input type="text" name="u_name" required>
+                </div>
+
+                <div class="password">
+                    <label for="password">Please enter your password:</label>
+                    <input type="password" name="password" required>
+                </div> 
+            </div>
+            <div id="error">
+                <p></p>
+            </div>
+            
+            <div class="remember-forgot">
+                <label><input type="checkbox" name="remember_login">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+
+        </form>
+        <script src="js/login_validation.js"></script>
+    </div>
+
+    <!-- end of Login -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <p>Art Design Blog Page</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+</body>
+
+</html>
